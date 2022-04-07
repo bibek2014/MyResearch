@@ -1,9 +1,2 @@
 Flask==1.1.2
 gunicorn==19.0.0
-numpy==1.20.3
-sklearn
-matplotlib
-pandas
-seaborn
-itsdangerous==2.0.1
-nltk==3.6.5
