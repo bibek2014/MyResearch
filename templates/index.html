@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collected Data</title>
+</head>
+<body>
+   <h1>Welcome to Data Info Page</h1>
+	<table>
+	<th> File Names </th>
+   {% for sl,f in Flnm: %}
+	
+    <tr> <td> {{sl+1}} </td> <td> {{ f }} </td> <td> <a href="{{ url_for('index', filename=f) }}">Download</a> </td></tr>
+	{% endfor %}
+	<tr> 	<a href="{{ url_for('download_all') }}">Download  All Files</a> </tr>
+
+	</table>
+</body>
+</html>
