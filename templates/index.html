@@ -10,7 +10,7 @@
 	<th> File Names </th>
    {% for sl,f in Flnm: %}
 	
-    <tr> <td> {{sl+1}} </td> <td> {{ f }} </td> <td> <a href="{{ url_for('index', filename=f) }}">Download</a> </td></tr>
+    <tr> <td> {{sl+1}} </td> <td> {{ f }} </td> </tr>
 	{% endfor %}
 	<tr> 	<a href="{{ url_for('download_all') }}">Download  All Files</a> </tr>
 
